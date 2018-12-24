@@ -88,17 +88,27 @@ A. Runtime and compile time are programming terms that refer to different stages
 What is heap?
 A.The Java virtual machine has a heap that is shared among all Java virtual machine threads. The heap is the runtime data area from which memory for all class instances and arrays is allocated.
 How java manage it's memory?
-A.
+A.The JVM loads the code, verifies the code, executes the code, manages memory (this includes allocating memory from the Operating System (OS), managing Java allocation including heap compaction and removal of garbage objects) and finally provides the runtime environment.
 What is the difference between String, StringBuffer and StringBuilder?
+A.String is also thread safe . String cannot be used by two threads simultaneously. String once assigned cannot be changed. The String class is an immutable class whereas StringBuffer and StringBuilder classes are mutable.
 What is Singleton class?
+A. Singleton Class in Java. In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time. ... To design a singleton class: Make constructor as private. Write a static method that has return type object of this singleton class.
 What is Serialization and Deserialization?
+A. Serialization is a process of converting an object into a sequence of bytes which can be persisted to a disk or database or can be sent through streams. The reverse process of creating object from sequence of bytes is called deserialization.
 when to use transient variable in java?
+A. The Java transient keyword is used on class attributes/variables to indicate that serialization process of such class should ignore such variables while creating a persistent byte stream for any instance of that class. A transient variable is a variable that can not be serialized.
 Difference between while and do..while loop?
+A.In Java While loop, condition is tested at the beginning of the loop and if the condition is True then only statements in that loop will be executed. ... In Java Do While loop, condition is tested at the end of the loop so Do While executes the statements in the code block at least once even if the condition Fails.
 What is Enum?
+A. A Java Enum is a special Java type used to define collections of constants. More precisely, a Java enum type is a special kind of Java class. An enum can contain constants, methods etc.
 What is Iterator?
+A.In Java, Iterator is an interface available in Collection framework in java.util package. It is a Java Cursor used to iterate a collection of objects. It is used to traverse a collection object elements one by one. It is available since Java 1.2 Collection Framework.
 Which one will take more memory, an int or Integer?
+A.Integer
 Why is String Immutable in Java?
+A.The string is Immutable in Java because String objects are cached in String pool. Since Strings are very popular as HashMap key, it's important for them to be immutable so that they can retrieve the value object which was stored in HashMap.
 What is constructor chaining in Java?
+
 The difference between Serial and Parallel Garbage Collector?
 What is JIT stands for?
 Explain Java Heap space and Garbage collection?
