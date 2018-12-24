@@ -65,7 +65,6 @@ A. Keyword “this” is a reference variable in Java that refers to the current
 What is "super" keyword in java? How many possible way can you use?
 A. super is a keyword. It is used inside a sub-class method definition to call a method defined in the super class. Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword. It is also used by class constructors to invoke constructors of its parent class. The Cat class in the following example is the subclass and the Animal class is the superclass.
    Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword. It is also used by class constructors to invoke constructors of its parent class. Super keyword are not used in static Method. It is used if method is overridden.
-
 What is JVM stand for ?
 A. A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode.
 Is JVM platform independent?
@@ -75,7 +74,6 @@ A. C:\Users\Nahida>java -version
    java version "11.0.1" 2018-10-16 LTS
    Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
    Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
-
 What is JAR stand for ?
 A. JAR (Java ARchive) is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file for distribution.
 What is the difference between JDK and JVM?
@@ -108,21 +106,39 @@ A.Integer
 Why is String Immutable in Java?
 A.The string is Immutable in Java because String objects are cached in String pool. Since Strings are very popular as HashMap key, it's important for them to be immutable so that they can retrieve the value object which was stored in HashMap.
 What is constructor chaining in Java?
-
+A. Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
+   Constructor chaining can be done in two ways:
+   Within same class: It can be done using this() keyword for constructors in same class
+   From base class: by using super() keyword to call constructor from the base class.
 The difference between Serial and Parallel Garbage Collector?
+A.A serial collector is a default copying collector which uses only one GC thread for the GC operation, while a parallel collector uses multiple GC threads for the GC operation.
 What is JIT stands for?
+A. Just in Time
 Explain Java Heap space and Garbage collection?
+A.When the heap becomes full, garbage is collected. During the garbage collection objects that are no longer used are cleared, thus making space for new objects. For example Java methods, thread stacks and native handles are allocated in memory separate from the heap, as well as JVM internal data structures.
 Can you guarantee the garbage collection process?
+A. Being an automatic process, programmers need not initiate the garbage collection process explicitly in the code.  It can choose to reject the request and so it is not guaranteed that these calls will do the garbage collection. This decision is taken by the JVM based on the eden space availability in heap memory.
 What is the difference between stack and heap in Java?
+A.Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of execution. Whenever an object is created, it's always stored in the Heap space and stack memory contains the reference to it.
 What is reflection in java and why is it useful?
+A. Reflection in Java is the ability to examine and/or modify the properties or behavior of an object at run-time. Reflection makes it possible to inspect classes, fields and methods at runtime, without knowing the names of the classes, methods etc. at compile time.
+   It helps us gain insight and see how to move forward. Reflection is often done as writing, possibly because this allows us to probe our reflections and develop them more thoughtfully.
 what is multithreading in java?
+A.The main purpose of multithreading is to provide simultaneous execution of two or more parts of a program to maximum utilize the CPU time. A multithreaded program contains two or more parts that can run concurrently. RUNNABLE – A thread executing in the Java virtual machine is in this state.
 What is the use of synchronization in Java?
+A.Synchronized keyword in Java is used to provide mutually exclusive access to a shared resource with multiple threads in Java. Synchronization in Java guarantees that no two threads can execute a synchronized method which requires the same lock simultaneously or concurrently.
 What is Framework?
+A.Frameworks are large bodies (usually many classes) of prewritten code to which you add your own code to solve a problem in a specific domain. Perhaps you could say that the framework uses your code because it is usually the framework that is in control. You make use of a framework by calling its methods, inheritance, and supplying "callbacks", listeners, or other implementations of the Observer pattern.
 What are the testing Framework available in java?
+A. JUnit, REST Assured, Selenium, TestNG, Mockito, Spock Framework, Cucumber, Spring Test, DBUnit, etc.
 Difference between jUnit and testNG?
+A. Major difference in TestNG and JUnit test frameworks is their scope. TestNG as core unit test framework for Java project, because TestNG is more advance in parameterize testing, dependency testing and suite testing (Grouping concept). TestNG is meant for high-level testing and complex integration test.
 What are the dependencies for this project?
+A.
 what is dependency injection in java?
+A.Java class has a dependency on another class, if it uses an instance of this class. We call this a _class dependency. For example, a class which accesses a logger service has a dependency on this service class. Ideally Java classes should be as independent as possible from other Java classes. This increases the possibility of reusing these classes and to be able to test them independently from other classes.
 What is static binding and dynamic binding?
+A.1) Static binding in Java occurs during Compile time while Dynamic binding occurs during Runtime. 2) private, final and static methods and variables uses static binding and bonded by compiler while virtual methods are bonded during runtime based upon runtime object.
 
 
 
