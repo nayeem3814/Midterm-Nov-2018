@@ -51,20 +51,44 @@ A.final keyword in java is a non-access modifier applicable only to a variable, 
 What is final, finally and finalize?
 A.final is a keyword. The variable declared as final should be initialized only once and cannot be changed. Java classes declared as final cannot be extended. Methods declared as final cannot be overridden. We can write system resources release code in finalize() method before getting garbage collected.
 What is a constructor ?
-A.
+A. A constructor in Java is a block of code similar to a method that’s called when an instance of an object is created. Here are the key differences between a constructor and a method:
+  •	A constructor doesn’t have a return type.
+  •	The name of the constructor must be the same as the name of the class.
+  •	Unlike methods, constructors are not considered members of a class.
+  •	A constructor is called automatically when a new instance of an object is created.
 Can we have multiple constructors in a class?
+A. A class can have multiple constructors, as long as their signature (the parameters they take) are not the same. You can define as many constructors as you need. When a Java class contains multiple constructors, we say that the constructor is overloaded (comes in multiple versions).
 If we don't have a constructor declared, what is called during the object creation?
+A.Rectangle rect = new Rectangle(); All classes have at least one constructor. If a class does not explicitly declare any, the Java compiler automatically provides a no-argument constructor, called the default constructor. ... If the parent has no constructor ( Object does have one), the compiler will reject the program.
 What is "this" keyword in java ?
+A. Keyword “this” is a reference variable in Java that refers to the current object. It can be used to refer instance variable of current class. It can be used to invoke or initiate current class constructor. It can be passed as an argument in the method call.
 What is "super" keyword in java? How many possible way can you use?
+A. super is a keyword. It is used inside a sub-class method definition to call a method defined in the super class. Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword. It is also used by class constructors to invoke constructors of its parent class. The Cat class in the following example is the subclass and the Animal class is the superclass.
+   Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword. It is also used by class constructors to invoke constructors of its parent class. Super keyword are not used in static Method. It is used if method is overridden.
+
 What is JVM stand for ?
+A. A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode.
 Is JVM platform independent?
+A.The JVM must be platform dependent to allow your Java to run on the specific platform. A JVM for Windows will translate your Java into different system calls than a JVM for OS X. No, JVMs are not platform independent. In fact they are platform specific run time environment provided by the vendor.
 What version of java are you using?
+A. C:\Users\Nahida>java -version
+   java version "11.0.1" 2018-10-16 LTS
+   Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
+   Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+
 What is JAR stand for ?
+A. JAR (Java ARchive) is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file for distribution.
 What is the difference between JDK and JVM?
+A.JVM is Java Virtual Machine, the JVM actually runs Java bytecode. JDK is Java Developer Kit, the JDK is what you need to compile Java source code. JVM (Java Virtual Machine) is an abstract machine.
 What is the difference between JVM and JRE?
+A.JVM is Java Virtual Machine, the JVM actually runs Java bytecode. JVM (Java Virtual Machine) is an abstract machine.
+  JRE is Java Runtime Environment, is what you need to run a Java program and contains a JVM, among other things.
 What is compile time and run time?
+A. Runtime and compile time are programming terms that refer to different stages of software program development. ... This compilation process is referred to as compile time. A compiled program can be opened and run by a user. When an application is running, it is called runtime.
 What is heap?
+A.The Java virtual machine has a heap that is shared among all Java virtual machine threads. The heap is the runtime data area from which memory for all class instances and arrays is allocated.
 How java manage it's memory?
+A.
 What is the difference between String, StringBuffer and StringBuilder?
 What is Singleton class?
 What is Serialization and Deserialization?
