@@ -1,28 +1,45 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A.A programming language is a vocabulary and set of grammatical rules for instructing a computer or computing device to perform specific tasks. It allows us to give instructions to a computer in a language the computer understands to produce various kinds of output.
 What jdk contains or composed of and define each components?
-A.
+A.The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (javadoc) and other tools needed in Java development
 What is IDE?
-A. Integrated Development Environment
+A. Integrated Development Environment, which help the user to code more easily.
 What are the IDEs available in the market to support java?
+A.NetBeans, Eclipse, IntelliJ IDEA, Android Studio, Enide Studio 2014, BlueJ, jEdit, jGRASP, jSource, JDeveloper,  DrJava.
 Explain the entire java life cycle.
+A.Editor (Eclipse/Intellij)> Source code> Java Compiler(javac)> Bytecodes (Classname.class)>JVM> Operating System.
 what is class?
-class is bluepring of a object
+A.A class is a user defined blueprint or prototype from which objects are created.
 What is object?
+A.An object is an instance of a class.
 What is the entry point of an application?
+A.The main method is the entry point of a Java application. Specifically, when the Java Virtual Machine is told to run an application by specifying its class (by using the java application launcher), it will look for the main method with the signature of public static void main(String[] args){}
 Why main is static?
+A.This is necessary because main() is called by the JVM before any objects are made. Since it is static it can be directly invoked via the class. Similarly, we use static sometime for user defined methods so that we need not to make objects. void indicates that the main() method being declared does not return a value.
 Which class is the superclass of all classes?
+A.java.lang.Object is a super class of any class by default. The root class of the Java class hierarchy. All non-primitive types (including arrays) inherit either directly or indirectly from this class. Object is the super class of all other classes you use, including the ones you implemented.
 What is difference between path and classpath variables?
+A.Path is an environment variable which is used by the operating system to find the executable. Classpath is an environment variable which is used by the Java compiler to find the path, of classes.
 What is the difference between an Interface and Abstract class?
+A.Interface can have only abstract methods. Abstract class can have abstract and non-abstract methods. From Java 8, it can have default and static methods also. Abstract class can have final, non-final, static and non-static variables. Interface has only static and final variables. Abstract class can provide the implementation of interface. Interface can’t provide the implementation of abstract class.
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A.No, Because an abstract class is an incomplete class (incomplete in the sense it contains abstract methods without body and output) we cannot create an instance or object.
+  There are two ways you can achieve this. 1) Either you extend / implement the Abstract class / interface in a new class, create the object of this new class and then use this object as per your need. 2) The Compiler allows you to create anonymous objects of the interfaces in your code.
 what is Access Specifier?
+A.Access specifiers for classes or interfaces in Java. ... But, the classes and interfaces themselves can have only two access specifiers when declared outside any other class. 1) public. 2) default (when no access specifier is specified) We cannot declare class/interface with private or protected access specifiers.
 What is OOP ? Define each feature of java OOP.
+A.OOP concepts in Java are the main ideas behind Java's Object Oriented Programming. They are an abstraction, encapsulation, inheritance, and polymorphism. Basically, Java OOP concepts let us create working methods and variables, then re-use all or part of them without compromising security.
 What is Java Package and which package is imported by default?
+A.A Java package is a mechanism for organizing Java classes into namespaces similar to the modules of Modula. Java packages can be stored in compressed files called JAR files, allowing classes to download faster as a group rather than one at a time.
+  java.lang package is imported by default, no need to explicitly import it. Classes in the java.lang package do not need to be imported (the compiler acts like they are always imported).
 What is API? Name list of API that you have used so far.
+A.Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK). It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors. These prewritten classes provide a tremendous amount of functionality to a programmer.
 Does java support multiple inheritance, explain why or why not?
+A.To avoid ambiguity error java does not support multiple inheritance through class. But through the interface, multiple inheritance is possible in java. No java doesn't support multiple inheritance directly because it leads to overiding of methods when both extended class have a same method name.
 What is method overloading and when it happens?
+A.
 Explain exceptions in java and how to handle it.
 What is static keyword in java? How it has been used in variables and methods ?
 What is final and how it has been used variables and methods?
