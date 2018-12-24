@@ -39,12 +39,19 @@ A.Java application programming interface (API) is a list of all classes that are
 Does java support multiple inheritance, explain why or why not?
 A.To avoid ambiguity error java does not support multiple inheritance through class. But through the interface, multiple inheritance is possible in java. No java doesn't support multiple inheritance directly because it leads to overiding of methods when both extended class have a same method name.
 What is method overloading and when it happens?
-A.
+A.Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. It is similar to constructor overloading in Java, that allows a class to have more than one constructor having different argument lists.
+  Overloading occurs when two or more methods in one class have the same method name but different parameters.
 Explain exceptions in java and how to handle it.
+A.Exceptions are events that occur during the execution of programs that disrupt the normal flow of instructions (e.g. divide by zero, array access out of bound, etc.). In Java, an exception is an object that wraps an error event that occurred within a method and contains: Information about the error including its type. If an exception is a checked exception, the compiler will check that your code either throws the exception or handles it in a try/catch block at compile-time. This is called “to throw an exception” because in Java you use the keyword “throw” to hand the exception to the runtime.
 What is static keyword in java? How it has been used in variables and methods ?
+A.In Java, static is a keyword used to describe how objects are managed in memory. It means that the static object belongs specifically to the class, instead of instances of that class. Variables, methods, and nested classes can be static. Think of a class for a book.
+  The static keyword is used in java mainly for memory management. It is used with variables, methods, blocks and nested class. It is a keyword that are used for share the same variable or method of a given class. This is used for a constant variable or a method that is the same for every instance of a class.
 What is final and how it has been used variables and methods?
+A.final keyword in java is a non-access modifier applicable only to a variable, a method or a class. Following are different contexts where final is used. Final variables. When a variable is declared with final keyword, its value can't be modified, essentially, a constant. We can declare some or all of a class's methods final. You use the final keyword in a method declaration to indicate that the method cannot be overridden by subclasses.
 What is final, finally and finalize?
+A.final is a keyword. The variable declared as final should be initialized only once and cannot be changed. Java classes declared as final cannot be extended. Methods declared as final cannot be overridden. We can write system resources release code in finalize() method before getting garbage collected.
 What is a constructor ?
+A.
 Can we have multiple constructors in a class?
 If we don't have a constructor declared, what is called during the object creation?
 What is "this" keyword in java ?
